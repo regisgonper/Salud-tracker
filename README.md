@@ -48,10 +48,10 @@ El diseño de la interfaz fue prototipado en FlutterFlow antes de su implementac
 ## Lógica de cálculo
 
 **IMC**
-IMC = peso (kg) / altura (m)²
-Menor a 18.5        → Bajo peso
-Entre 18.5 y 24.9   → Normal
-Mayor o igual a 25  → Sobrepeso
+IMC = peso (kg) / (altura en metros)²
+Menor a 18.5          → Bajo peso
+Entre 18.5 y 24.9     → Normal
+Mayor o igual a 25    → Sobrepeso
 
 **Índice de Estado Físico**
 base = 100
@@ -78,18 +78,6 @@ lib/
 └── utils/
 └── health_logic.dart
 
----
-
-## Tecnologías utilizadas
-
-| Tecnologia | Uso |
-|---|---|
-| Flutter 3.x | Framework principal de desarrollo |
-| Dart | Lenguaje de programacion |
-| Material Design 3 | Sistema de diseno de interfaz |
-| FlutterFlow | Prototipado y diseno de pantallas |
-
----
 
 ## Proceso de desarrollo
 
