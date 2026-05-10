@@ -67,26 +67,36 @@ Menor a 50          → Fatiga
 ---
 
 ## Arquitectura del proyecto
-lib/
-├── main.dart
-├── models/
-│   └── health_record.dart
-├── screens/
-│   ├── imc_screen.dart
-│   ├── estado_fisico_screen.dart
-│   └── historial_screen.dart
-└── utils/
-└── health_logic.dart
 
+**lib/**
+- main.dart — Punto de entrada y navegacion principal
+- **models/** — health_record.dart — Modelo de datos del historial
+- **screens/** — imc_screen.dart — Pantalla calculadora IMC
+- **screens/** — estado_fisico_screen.dart — Pantalla estado fisico
+- **screens/** — historial_screen.dart — Pantalla historial
+- **utils/** — health_logic.dart — Logica de calculos
 
 ## Proceso de desarrollo
 
-1. Prototipado de las tres pantallas en FlutterFlow
-2. Creacion del proyecto Flutter con estructura por capas
-3. Implementacion de la logica de calculo en archivo independiente
-4. Desarrollo de la interfaz de usuario por pantalla
-5. Integracion del historial compartido entre pantallas
-6. Pruebas en navegador y dispositivo fisico
+El desarrollo de la aplicacion siguio una metodologia estructurada por etapas,
+partiendo del diseño visual hasta llegar a la implementacion funcional.
+
+En primera instancia, se realizo el prototipado de las interfaces en FlutterFlow,
+herramienta que permitio definir la distribucion visual de cada pantalla y
+establecer una guia de diseno coherente con el enfoque medico de la aplicacion.
+
+Posteriormente, se creo el proyecto en Flutter aplicando una arquitectura por capas,
+separando la logica de negocio, los modelos de datos y las vistas en directorios
+independientes, lo cual favorece la mantenibilidad y legibilidad del codigo.
+
+La logica de calculo del IMC y del indice de estado fisico fue implementada en un
+modulo separado, siguiendo el principio de responsabilidad unica, de modo que los
+calculos puedan ser reutilizados o modificados sin afectar la interfaz de usuario.
+
+Finalmente, se integro un sistema de historial en memoria compartido entre pantallas,
+permitiendo al usuario consultar todos los resultados obtenidos durante la sesion.
+La aplicacion fue probada tanto en navegador web como en dispositivo fisico Android.
+
 
 ---
 
